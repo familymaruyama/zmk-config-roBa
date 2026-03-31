@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R          &kp T                                               &kp Y        &kp U  &lt 5 I           &mt UP_ARROW O    &kp P
-&kp A             &kp S         &kp D         &kp F          &kp G        &trans                  &kp MINUS      &kp H        &kp J  &mt LEFT_ARROW K  &mt DOWN_ARROW L  &mt RIGHT_ARROW ESC
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &lt 6 TAB               &kp SEMICOLON  &kp N        &kp M  &kp COMMA         &kp DOT           &kp SLASH
-&kp K_POWER       &kp LEFT_ALT  &kp LEFT_GUI  &kp LC(SPACE)  &lt 2 SPACE  &lt 1 LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R          &kp T                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F          &kp G        &trans         &kp COLON      &kp H        &kp J  &kp K      &kp L    &kp ESC
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &lt 6 TAB      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LC(SPACE)  &lt 2 SPACE  &to 1          &kp BACKSPACE  &lt 1 ENTER                             &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -103,7 +103,7 @@
 &kp EXCLAMATION             &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                                               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp LCTRL        &kp AMPERSAND    &kp ASTERISK     &kp MINUS    &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS     &kp EQUAL                    &kp N0          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans                      &trans           &trans           &trans           &trans       &kp PERIOD                   &trans          &trans                                                          &kp PIPE
+&trans                      &trans           &trans           &kp LC(SPACE)    &to 2        &lt 1 PERIOD                 &trans          &trans                                                          &kp PIPE
             >;
         };
 
