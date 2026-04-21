@@ -12,6 +12,9 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
+  　speed = <3>;
+    acceleration = <1>;
+
     // arrows {
     //     layers = <3>;
     //     bindings =
