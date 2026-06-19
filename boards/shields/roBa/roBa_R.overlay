@@ -22,8 +22,8 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // ポインタ速度を 1.5倍 にする（3/2）
-        input-processors = <&zip_xy_scaler 3 2>;
+        // ポインタ速度を 1.25倍 にする（5/4）
+        input-processors = <&zip_xy_scaler 5 4  &zip_scroll_scaler 1 2>;
     };
 };
 
