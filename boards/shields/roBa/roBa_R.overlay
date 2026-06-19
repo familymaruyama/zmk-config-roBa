@@ -1,4 +1,6 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
+
 
 &default_transform {
     col-offset = <6>;
@@ -15,13 +17,16 @@
 };
 
 / {
-    trackball_listener {
+    trackball_listener: trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        // ポインタ速度を 1.5倍 にする（3/2）
+        input-processors = <&zip_xy_scaler 3 2>;
     };
 };
+
 
 
 &pinctrl {
